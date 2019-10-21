@@ -10,25 +10,40 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+
+    @media (min-width: $desktop) {
+      padding: 10px 30px;
+    }
+  }
+
+  .btn + .btn {
+    @media (min-width: $desktop) {
+      margin-left: 10px;
+    }
   }
   
+  
   .default {
-    background-color: #51ddfc;
+    background-color: $skyblue;
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $red;
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $purple;
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $green;
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $orange;
   }
   
+  .col-12 {
+    
+    flex-basis: 100%;
+  }

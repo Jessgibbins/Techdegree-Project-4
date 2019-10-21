@@ -1,10 +1,17 @@
-// ---------- NAVIGATION ---------- //
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
 
 .nav {
+    @include flexColumn;
     padding-left: 0;
-    flex-basis: 100%;
-    display: flex;
     flex-direction: column;
+
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
   }
   
   .nav-link {
@@ -16,6 +23,10 @@
     transition: 
       background-color .2s ease-in-out, 
       color .2s ease-in-out;
+
+    @media (min-width: $desktop) {
+      flex-basis: $fullFlex;
+    }
   }
   
   .nav-link:hover {
