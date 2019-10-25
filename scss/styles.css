@@ -394,15 +394,6 @@ a {
   padding: 0 10px;
 }
 
-@media (min-width: 768px) {
-  .container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1400px;
-  }
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,15 +405,6 @@ a {
   padding: 1em 10px;
 }
 
-@media (min-width: 768px) {
-  .row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 [class^=col] {
   margin-top: 10px;
   -ms-flex-preferred-size: 100%;
@@ -430,12 +412,6 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
-}
-
-@media (min-width: 768px) {
-  [class^=col] {
-    margin-left: 10px;
-  }
 }
 
 .theme.col-1 {
@@ -495,10 +471,35 @@ a {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: auto;
+  }
   .centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  [class^=col] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   [class^=col] + [class^=col] {
     margin-left: 10px;
@@ -598,11 +599,6 @@ a {
   background-color: #fd7856;
 }
 
-.col-12 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
 /* ============================================= */
 /*              Forms                            */
 /* ============================================= */
@@ -668,6 +664,9 @@ a {
 /*              Navigation                       */
 /* ============================================= */
 .nav {
+  padding-left: 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,8 +674,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 0;
-  flex-direction: column;
 }
 
 @media (min-width: 768px) {
