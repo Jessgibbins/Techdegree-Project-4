@@ -3,47 +3,47 @@
 /* ============================================= */
 
 .btn {
-    margin-top: 15px;
-    width: 100%;
-    color: #fff;
-    border: none;
-    padding: 10px 0;
-    text-transform: uppercase;
-    border-radius: 5px;
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
 
-    @media (min-width: $desktop) {
-      padding: 10px 30px;
-    }
+  @media (min-width: $desktop) {
+    padding: 10px 30px;
   }
+}
 
-  .btn + .btn {
-    @media (min-width: $desktop) {
-      margin-left: 10px;
-    }
+.btn + .btn {
+  @media (min-width: $desktop) {
+    margin-left: 10px;
   }
+}
+
+
+.default {
+  background-color: $skyblue;
+}
+
+.error {
+  background-color: $red;
+}
+
+.info {
+  background-color: $purple;
+}
+
+.success {
+  background-color: $green;
+}
+
+.warning {
+  background-color: $orange;
+}
+
+.col-12 {
   
-  
-  .default {
-    background-color: $skyblue;
-  }
-  
-  .error {
-    background-color: $red;
-  }
-  
-  .info {
-    background-color: $purple;
-  }
-  
-  .success {
-    background-color: $green;
-  }
-  
-  .warning {
-    background-color: $orange;
-  }
-  
-  .col-12 {
-    
-    flex-basis: 100%;
-  }
+  flex-basis: 100%;
+}
